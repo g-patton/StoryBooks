@@ -6,6 +6,7 @@ const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const methodOverride = require('method-override')
 const passport = require('passport')
+var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session')
 const MongoStore = require('connect-mongo');
 const connectDB = require('./config/db')
@@ -30,6 +31,17 @@ if(process.env.NODE_ENV === 'development') {
 // handlebars
 app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', '.hbs')
+
+
+//sessions
+app.use(
+    session({
+      secret: 'keyboard cat',
+      resave: false,
+      saveUninitialized: false,
+    //   store: MongoStore.create({mongoUrl: process.env.MONGO_URI,}),
+    })
+  )
 
 // passport middleware
 app.use(passport.initialize())
