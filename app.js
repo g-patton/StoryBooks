@@ -15,6 +15,9 @@ const PORT = process.env.PORT || 3000;
 //load config
 dotenv.config({ path: './config/config.env' });
 
+// passport config 
+require('./config/passport')(passport);
+
 connectDB();
 
 const app = express();
@@ -27,6 +30,11 @@ if(process.env.NODE_ENV === 'development') {
 // handlebars
 app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', '.hbs')
+
+// passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
+
 
 //static folder
 app.use(express.static(path.join(__dirname, 'public')))
