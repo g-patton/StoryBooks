@@ -17,7 +17,6 @@ router.post('/', ensureAuth, async (req, res) => {
     req.body.user = req.user.id
     await Story.create(req.body)
     res.redirect('/dashboard')
-    
   } catch (err) {
     console.error(err)
     res.render('error/500')
@@ -157,5 +156,4 @@ router.get('/user/:userId', ensureAuth, async (req, res) => {
     res.render('error/500')
   }
 })
-
 module.exports = router
