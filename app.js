@@ -6,7 +6,6 @@ const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const methodOverride = require('method-override')
 const passport = require('passport')
-var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session')
 const MongoStore = require('connect-mongo');
 const connectDB = require('./config/db')
