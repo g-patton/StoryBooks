@@ -100,10 +100,7 @@ app.use('/auth', require('./routes/auth'))
 app.use('/stories', require('./routes/stories'))
 
 
-app.listen(
-    PORT, 
-    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
-    );
+app.listen(process.env.PORT || 5000);
 //
 
 
