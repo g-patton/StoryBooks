@@ -7,26 +7,31 @@
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-patton/StoryBooks.git"
+  },
   "author": "gpatton",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g-patton/StoryBooks/issues"
+  },
+  "homepage": "https://github.com/g-patton/StoryBooks#readme",
   "dependencies": {
     "connect-mongo": "^4.6.0",
-    "dateformat": "^5.0.3",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
-    "handlebars": "^4.7.7",
-    "handlebars-helper-formatdate": "^1.0.0",
     "method-override": "^3.0.0",
     "moment": "^2.29.4",
-    "mongoose": "^6.5.1",
+    "mongoose": "^6.5.2",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "cross-env": "^7.0.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "nodemon": "^2.0.19"
   }
 }
