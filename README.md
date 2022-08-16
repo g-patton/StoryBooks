@@ -5,11 +5,12 @@
 
 - This application can be found at [https://storybooksforfriends.herokuapp.com/](https://storybooksforfriends.herokuapp.com/)
 
-This app uses Node.js/Express/MongoDB and Handlebars with Google OAuth for authentication
+This app uses Node.js/Express/MongoDB/Handlebars with Google OAuth for authentication
 
 ## Usage
 
 Add your mongoDB URI and Google OAuth credentials to the config.env file
+- this will include both client secret and ID
 
 ```
 # Install dependencies
