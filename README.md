@@ -4,9 +4,8 @@
 
 
 - This application can be found at [https://storybooksforfriends.herokuapp.com/](https://storybooksforfriends.herokuapp.com/)
- - Currently resolving google authentication error
 
-This app uses Node.js/Express/MongoDB with Google OAuth for authentication
+This app uses Node.js/Express/MongoDB and Handlebars with Google OAuth for authentication
 
 ## Usage
 
