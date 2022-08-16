@@ -1,12 +1,11 @@
 # StoryBooks
 
-> Create public and private stories from your life
+- Create public and private stories from your life
 
-<<<<<<< HEAD
+
 - This application can be found at [https://storybooksforfriends.herokuapp.com/](https://storybooksforfriends.herokuapp.com/)
+ - Currently resolving google authentication error
 
-
->>>>>>> parent of 505486c (Update README.md)
 This app uses Node.js/Express/MongoDB with Google OAuth for authentication
 
 ## Usage
