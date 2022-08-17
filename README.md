@@ -2,7 +2,6 @@
 
 - Create public and private stories from your life
 
-
 - This application can be found at [https://storybooksforfriends.herokuapp.com/](https://storybooksforfriends.herokuapp.com/)
 
 This app uses Node.js/Express/MongoDB/Handlebars with Google OAuth for authentication
@@ -12,6 +11,8 @@ This app uses Node.js/Express/MongoDB/Handlebars with Google OAuth for authentic
 Add your mongoDB URI and Google OAuth credentials to the config.env file
 - this will include a mongo-uri and both client secret and ID variables
 - include your config.env file in your .gitignore
+
+--make sure cross-env is in dependencies and not dev-dependencies for production
 
 ```
 # Install dependencies
